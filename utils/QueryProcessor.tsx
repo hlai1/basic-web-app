@@ -12,5 +12,11 @@ export default function QueryProcessor(query: string): string {
     );
   }
 
+  else if (query.toLowerCase().includes("who is the best rat?")) {
+    return (
+      "buckytherat"
+    );
+  }
+
   return "";
 }
