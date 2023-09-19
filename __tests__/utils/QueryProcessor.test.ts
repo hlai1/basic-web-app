@@ -25,4 +25,12 @@ describe("QueryProcessor", () => {
             "huaruil"
           ));
     });
+
+    test('should return addition', () => {
+        const query = "What is 7 plus 53?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "60"
+          ));
+    });
 });
